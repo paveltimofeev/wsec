@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>WS</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" v-model="domain" placeholder="domain"></input><br>
+        <input type="text" v-model="ip" placeholder="IP adress"></input><br>
+        <ul>
+            <li v-for="check in checks" v-if="isValid(check)" v-on:click="openCheck(check, $event)">
+                {{ check.name }}
+            </li>
+        </ul>
+    </div>
+
+    <br><small><i><a href="https://vuejs.org/v2/guide/">https://vuejs.org/v2/guide/</a></i></small>
+
+</body>
+
+<script src="checks.js"></script>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline
+}
