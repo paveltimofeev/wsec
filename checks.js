@@ -8,6 +8,7 @@ var checks = [
     { type: "DOMAIN", name: "Observatory", mask: "https://observatory.mozilla.org/analyze.html?host=%%" },
     { type: "DOMAIN", name: "Up Guard", mask: "https://app.upguard.com/webscan?url=%%" },
     { type: "DOMAIN", name: "Whois", mask: "https://www.whois.com/whois/%%" },
+    { type: "DOMAIN", name: "Security Analyser for ASP.NET", mask: "https://asafaweb.com/Scan?Url=%%" },
     { type: "IP", name: "Shodan", mask: "https://www.shodan.io/host/%%" },
     { type: "*", name: "web server scanner", mask: "https://pentest-tools.com/website-vulnerability-scanning/web-server-scanner" },
     { type: "*", name: "google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" }
