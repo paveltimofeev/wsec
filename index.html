@@ -9,6 +9,7 @@
     <div id="app">
         <input type="text" v-model="domain" placeholder="domain"></input><br>
         <input type="text" v-model="ip" placeholder="IP adress"></input><br>
+        <input type="text" v-model="email" placeholder="email"></input><br>
         <ul>
             <li v-for="check in checks" v-if="isValid(check)" v-on:click="openCheck(check, $event)">
                 {{ check.name }}

@@ -1,6 +1,7 @@
 var checks = [
 
     { type: "DOMAIN", name: "Threat Crowd Graph", url_mask: "http://threatcrowd.org/domain.php?domain=%DOMAIN%" },
+    { type: "EMAIL", name: "EMAIL: Threat Crowd", mask: "https://threatcrowd.org/email.php?email=%EMAIL%" },
     { type: "DOMAIN", name: "Url Void", url_mask: "http://www.urlvoid.com/scan/%DOMAIN%" },
     { type: "DOMAIN", name: "Alien Vault", url_mask: "https://otx.alienvault.com/indicator/hostname/%DOMAIN%/" },
     { type: "DOMAIN", name: "Virustotal", url_mask: "https://www.virustotal.com/en/domain/%DOMAIN%/information/" },

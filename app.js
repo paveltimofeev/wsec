@@ -3,6 +3,7 @@ var app = new Vue({
   data: {
     message: 'Click on me!',
     domain: '',
+    email: '',
     ip: '',
     checks: checks
   },
@@ -15,6 +16,8 @@ var app = new Vue({
                 return this.ip !== '';
             case "DOMAIN":
                 return this.domain !== '';
+            case "EMAIL":
+                return this.email !== '';
             case "*":
                 return true;
             default:
@@ -28,6 +31,9 @@ var app = new Vue({
         }
         else if( this.ip && check.ip_mask ){
             window.open( check.ip_mask.replace("%IP%", this.ip), null, );
+        }
+        else if( this.email && check.mask ){
+            window.open( check.mask.replace("%EMAIL%", this.email), null, );
         }
         else if( check.ip_mask ){
             window.open( check.ip_mask, null, );
