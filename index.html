@@ -12,7 +12,7 @@
         <input type="text" v-model="email" placeholder="email"></input><br>
         <ul>
             <li v-for="check in checks" v-if="isValid(check)" v-on:click="openCheck(check, $event)">
-                {{ check.name }}
+                {{ check.type }}: {{ check.name }}
             </li>
         </ul>
     </div>
