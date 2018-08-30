@@ -14,5 +14,5 @@ var checks = [
     { type: "IP", name: "I Know What You Download", mask: "https://iknowwhatyoudownload.com/ru/peer/?ip=%%" },    
     { type: "*", name: "web server scanner", mask: "https://pentest-tools.com/website-vulnerability-scanning/web-server-scanner" },
     { type: "*", name: "google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" },
-    { type: "*", name: "RusProfile (Company Name Info)", mask: "https://www.rusprofile.ru/search?query=%%" }
+    { type: "DOMAIN", name: "RusProfile (Company Name Info)", mask: "https://www.rusprofile.ru/search?query=%%" }
 ];
