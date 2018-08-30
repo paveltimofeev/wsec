@@ -30,6 +30,14 @@ body { font-family: 'Barlow', sans-serif; }
   border: 1px solid #26A69A;
   background-color: #E0F2F1;
 }
+.btn {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px dashed #26A69A;
+  background-color: #B2DFDB;
+  cursor: pointer;
+  width: 100%;
+}
 .app-list {
   display: flex;
   flex-direction: column;
@@ -50,7 +58,10 @@ body { font-family: 'Barlow', sans-serif; }
   margin-bottom: 1em;
   margin-right: 1em;
 }
+.btn:hover,
 .item:hover {
   color: white;
   background-color: #01579B;
+  border-style: solid;
+  box-shadow: 0px 3px 4px 2px #00000024;
 }
