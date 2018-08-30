@@ -3,7 +3,6 @@
     <title>WS</title>
     <script src="https://unpkg.com/vue"></script>
     <link href="style.css" rel="stylesheet">
-  
     <script src="checks.js"></script>
 </head>
 <body>
@@ -12,9 +11,10 @@
       
       <div class="app-content app-sidebar">
         <h1>Target</h1>
-        <input type="text" v-model="domain" placeholder="domain"></input><br>
-        <input type="text" v-model="ip" placeholder="IP adress"></input><br>
-        <input type="text" v-model="email" placeholder="email"></input><br>
+        <input type="text" v-model="domain" placeholder="domain"><br>
+        <input type="text" v-model="ip" placeholder="IP adress"><br>
+        <input type="text" v-model="email" placeholder="email"><br>
+        <button class="btn" v-on:click="reset()">Reset</button>
 <!--        
         <input type="checkbox" v-model="show_domain">domain</input><br>
         <input type="checkbox" v-model="show_ip">ip address</input><br>
@@ -27,7 +27,7 @@
         <ul>
             <li v-for="check in checks" v-if="isValid(check)" v-on:click="openCheck(check, $event)">
                 <div class="item">
-                {{ check.type }}: {{ check.name }}
+                  {{ check.type }}: {{ check.name }}
                 </div>
             </li>
         </ul>
