@@ -3,25 +3,39 @@
     <title>WS</title>
     <script src="https://unpkg.com/vue"></script>
     <link href="style.css" rel="stylesheet">
+  
+    <script src="checks.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 
     <div id="app">
+      
+      <div class="app-content app-sidebar">
+        <h1>Target</h1>
         <input type="text" v-model="domain" placeholder="domain"></input><br>
         <input type="text" v-model="ip" placeholder="IP adress"></input><br>
         <input type="text" v-model="email" placeholder="email"></input><br>
+<!--        
+        <input type="checkbox" v-model="show_domain">domain</input><br>
+        <input type="checkbox" v-model="show_ip">ip address</input><br>
+        <input type="checkbox" v-model="show_email">email</input><br>
+-->
+      </div>
+
+      <div class="app-content app-list">
+        <h1>Services</h1>
         <ul>
             <li v-for="check in checks" v-if="isValid(check)" v-on:click="openCheck(check, $event)">
                 {{ check.type }}: {{ check.name }}
             </li>
         </ul>
+      </div>
+
     </div>
 
     <br><small><i><a href="https://vuejs.org/v2/guide/">https://vuejs.org/v2/guide/</a></i></small>
 
 </body>
-
-<script src="checks.js"></script>
-<script src="app.js"></script>
 
 </html>
