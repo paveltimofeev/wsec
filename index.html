@@ -26,7 +26,9 @@
         <h1>Services</h1>
         <ul>
             <li v-for="check in checks" v-if="isValid(check)" v-on:click="openCheck(check, $event)">
+                <div class="item">
                 {{ check.type }}: {{ check.name }}
+                </div>
             </li>
         </ul>
       </div>
