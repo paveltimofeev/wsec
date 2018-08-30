@@ -57,6 +57,15 @@ body { font-family: 'Barlow', sans-serif; }
   padding: 1em;
   margin-bottom: 1em;
   margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item svg {
+  width:24px;
+  height:24px;
+  fill: #EF6C00;
+  margin-bottom: 1em;
 }
 .btn:hover,
 .item:hover {
