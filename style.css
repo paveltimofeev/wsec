@@ -9,14 +9,6 @@ html, body {
 body { font-family: 'Barlow', sans-serif; }
 * { box-sizing: border-box; }
 
-li {
-    cursor: pointer;
-}
-
-li:hover {
-    text-decoration: underline
-}
-
 #app {
   display: flex; 
   width: 100%;
@@ -39,3 +31,23 @@ li:hover {
   background-color: #E0F2F1;
 }
 .app-list {}
+.app-list ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.app-list li {
+    cursor: pointer;
+    list-style: none;
+}
+.item {
+  border: 1px dashed skyblue;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+.item:hover {
+  color: white;
+  background-color: #01579B;
+}
