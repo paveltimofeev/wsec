@@ -4,6 +4,9 @@ var app = new Vue({
     domain: '',
     email: '',
     ip: '',
+    show_domain: false,
+    show_ip: false,
+    show_email: false,
     checks: checks
   },
   methods: {
@@ -25,6 +28,11 @@ var app = new Vue({
         else if( check.mask ){
             window.open( check.mask, null, );
         }
+    },
+    reset: function(){
+      this.domain = '';
+      this.email = '';
+      this.ip = '';
     }
   }
 })
