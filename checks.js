@@ -2,6 +2,7 @@ var checks = [
 
     { type: "EMAIL", name: "Threat Crowd Graph", mask: "https://threatcrowd.org/email.php?email=%%" },
     { type: "EMAIL", name: "Have I Been Pwned", mask: "https://haveibeenpwned.com/" },
+    { type: "EMAIL", name: "Have I Been Pwned (full json)", mask: "https://api.haveibeenpwned.com/unifiedsearch/%%" },
     { type: "DOMAIN", name: "Threat Crowd Graph", mask: "http://threatcrowd.org/domain.php?domain=%%" },
     { type: "DOMAIN", name: "Url Void", mask: "http://www.urlvoid.com/scan/%%" },
     { type: "DOMAIN", name: "Alien Vault", mask: "https://otx.alienvault.com/indicator/hostname/%%/" },
