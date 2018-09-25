@@ -19,5 +19,7 @@ var checks = [
     { type: "*", name: "[pentest-tools.com] Server vulnerability scanning", mask: "https://pentest-tools.com/website-vulnerability-scanning/web-server-scanner" },
     { type: "*", name: "[pentest-tools.com] Google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" },
     { type: "*", name: "[ThreatCrowd] Domains by Owner Name", mask: "https://threatcrowd.org/listDomains.php?name=%%" },
-    { type: "*", name: "[ThreatCrowd] Domains by Phone Number", mask: "https://threatcrowd.org/listDomains.php?tel=%%" }
+    { type: "*", name: "[ThreatCrowd] Domains by Phone Number", mask: "https://threatcrowd.org/listDomains.php?tel=%%" },
+    { type: "*", name: "MxToolbox", mask: "https://mxtoolbox.com/NetworkTools.aspx" },
+    { type: "*", name: "MxToolbox Investigator", mask: "https://mxtoolbox.com/Public/FreeInvestigator.aspx" }
 ];
