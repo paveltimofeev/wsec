@@ -1,9 +1,9 @@
 var checks = [
 
-    { type: "EMAIL", name: "Threat Crowd Graph", mask: "https://threatcrowd.org/email.php?email=%%" },
+    { type: "EMAIL", name: "[ThreatCrowd] Threat Crowd Graph by Email", mask: "https://threatcrowd.org/email.php?email=%%" },
     { type: "EMAIL", name: "Have I Been Pwned", mask: "https://haveibeenpwned.com/" },
     { type: "EMAIL", name: "Have I Been Pwned (full json)", mask: "https://api.haveibeenpwned.com/unifiedsearch/%%" },
-    { type: "DOMAIN", name: "Threat Crowd Graph", mask: "http://threatcrowd.org/domain.php?domain=%%" },
+    { type: "DOMAIN", name: "[ThreatCrowd] Threat Crowd Graph by Domain", mask: "http://threatcrowd.org/domain.php?domain=%%" },
     { type: "DOMAIN", name: "Url Void", mask: "http://www.urlvoid.com/scan/%%" },
     { type: "DOMAIN", name: "Alien Vault", mask: "https://otx.alienvault.com/indicator/hostname/%%/" },
     { type: "DOMAIN", name: "Virustotal", mask: "https://www.virustotal.com/en/domain/%%/information/" },
@@ -17,5 +17,7 @@ var checks = [
     { type: "IP", name: "Censys", mask: "https://www.censys.io/ipv4/%%" },
     { type: "IP", name: "I Know What You Download", mask: "https://iknowwhatyoudownload.com/ru/peer/?ip=%%" },  
     { type: "*", name: "[pentest-tools.com] Server vulnerability scanning", mask: "https://pentest-tools.com/website-vulnerability-scanning/web-server-scanner" },
-    { type: "*", name: "google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" }
+    { type: "*", name: "google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" },
+    { type: "*", name: "[ThreatCrowd] Domains by Owner Name", mask: "https://threatcrowd.org/listDomains.php?name=%%" },
+    { type: "*", name: "[ThreatCrowd] Domains by Phone Number", mask: "https://threatcrowd.org/listDomains.php?tel=%%" }
 ];
