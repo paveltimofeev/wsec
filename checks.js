@@ -14,7 +14,8 @@ var checks = [
     { type: "DOMAIN", name: "Google Dork: Trello", mask: "https://www.google.com/search?hl=ru&q=inurl%3Atrello.com+AND+intext%3A%%" },
     { type: "DOMAIN", name: "RusProfile (Company Name Info)", mask: "https://www.rusprofile.ru/search?query=%%" },
     { type: "IP", name: "Shodan", mask: "https://www.shodan.io/host/%%" },
-    { type: "IP", name: "I Know What You Download", mask: "https://iknowwhatyoudownload.com/ru/peer/?ip=%%" },    
+    { type: "IP", name: "Censys", mask: "https://www.censys.io/ipv4/%%" },
+    { type: "IP", name: "I Know What You Download", mask: "https://iknowwhatyoudownload.com/ru/peer/?ip=%%" },  
     { type: "*", name: "web server scanner", mask: "https://pentest-tools.com/website-vulnerability-scanning/web-server-scanner" },
     { type: "*", name: "google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" }
 ];
