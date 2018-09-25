@@ -12,6 +12,8 @@ var checks = [
     { type: "DOMAIN", name: "Whois", mask: "https://www.whois.com/whois/%%" },
     { type: "DOMAIN", name: "Security Analyser for ASP.NET", mask: "https://asafaweb.com/Scan?Url=%%" },
     { type: "DOMAIN", name: "Google Dork: Trello", mask: "https://www.google.com/search?hl=ru&q=inurl%3Atrello.com+AND+intext%3A%%" },
+    { type: "DOMAIN", name: "Google Dork: disclosure.ru", mask: "https://www.google.com/search?hl=ru&q=inurl%3Awww.disclosure.ru+AND+intext%3A%%" },
+    { type: "DOMAIN", name: "Google Dork: e-disclosure.ru", mask: "https://www.google.com/search?hl=ru&q=inurl%3Ae-disclosure.ru+AND+intext%3A%%" },
     { type: "DOMAIN", name: "RusProfile (Company Name Info)", mask: "https://www.rusprofile.ru/search?query=%%" },
     { type: "IP", name: "Shodan", mask: "https://www.shodan.io/host/%%" },
     { type: "IP", name: "Censys", mask: "https://www.censys.io/ipv4/%%" },
