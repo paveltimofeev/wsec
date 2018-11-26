@@ -20,8 +20,8 @@ var checks = [
     { type: "DOMAIN", name: "Censys", mask: "https://www.censys.io/ipv4?q=%%" },
     { type: "IP", name: "I Know What You Download", mask: "https://iknowwhatyoudownload.com/ru/peer/?ip=%%" },  
     
-    { type: "AUTO", name: "CAR INFO BY NUMBER PLATE", mask: "https://avtocod.ru/proverkaavto/%%" },
-    { type: "AUTO", name: "CAR COMMENTS BY NUMBER PLATE", mask: "http://avto-nomer.ru/ru/gallery.php?fastsearch=%%" },
+    { type: "DOMAIN", name: "CAR INFO BY NUMBER PLATE", mask: "https://avtocod.ru/proverkaavto/%%" },
+    { type: "DOMAIN", name: "CAR COMMENTS BY NUMBER PLATE", mask: "http://avto-nomer.ru/ru/gallery.php?fastsearch=%%" },
     
     { type: "*", name: "[pentest-tools.com] Server vulnerability scanning", mask: "https://pentest-tools.com/website-vulnerability-scanning/web-server-scanner" },
     { type: "*", name: "[pentest-tools.com] Google hacking", mask: "https://pentest-tools.com/information-gathering/google-hacking#" },
