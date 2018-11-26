@@ -23,10 +23,10 @@ var app = new Vue({
     openCheck: function( check ){
     
         if( this[check.type.toLowerCase()] && check.mask ){
-            window.open( check.mask.replace("%%", this[check.type.toLowerCase()]), null, );
+            window.open( check.mask.replace("%%", this[check.type.toLowerCase()]), check.name );
         }
         else if( check.mask ){
-            window.open( check.mask, null, );
+            window.open( check.mask, check.name );
         }
     },
     reset: function(){
