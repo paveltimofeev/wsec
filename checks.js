@@ -15,6 +15,7 @@ var checks = [
     { type: "DOMAIN", name: "Google Dork: e-disclosure.ru", mask: "https://www.google.com/search?hl=ru&q=inurl%3Ae-disclosure.ru+AND+intext%3A%%" },
     { type: "DOMAIN", name: "RusProfile (Company Name Info)", mask: "https://www.rusprofile.ru/search?query=%%" },
     { type: "DOMAIN", name: "Yandex.ru/infected", mask: "https://yandex.ru/infected?url=%%" },
+    { type: "DOMAIN", name: "Website Analysis", mask: "https://a.pr-cy.ru/%%/" },
     { type: "IP", name: "Shodan", mask: "https://www.shodan.io/host/%%" },
     { type: "IP", name: "Censys", mask: "https://www.censys.io/ipv4/%%" },
     { type: "DOMAIN", name: "Censys", mask: "https://www.censys.io/ipv4?q=%%" },
